@@ -33,35 +33,123 @@
 		
 		<!-- Custom styles for this project -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" 
-		      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
-			  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
-			  crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 		<link href="./public/css/style.css" rel="stylesheet" type="text/css">
-	</head>
+	</head> 
 	<body>		
-		<div class="container main">
+		<nav class="mynavbar navbar-expand-lg navbar navbar-dark bg-primary fixed-top">
+		  <a class="navbar-brand" href="#">felipeares</a>
+		  <!-- 
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		    </ul>
+		  </div>
+		  -->
+		</nav>
+		
+	
+		
+		<!-- Page Content -->
+		<div class="container-fluid">
 			
-			<div class="row">
-				<div class="col-md-12">
-					Felipe Ares
+			<div class="row" style="background:#EEE;">
+				<div class="col-md-6 px-0 py-0">
+					<div class="jumbotron my-0">
+					  <h1 class="display-4 mb-0" style="font-size:48px;">Felipe Ares</h1>
+					  <h2 class="mt-0 pt-0" style="font-size:28px;">Full Stack Data Scientist</h2>
+					  <p class="lead">En este lugar encontrarás mis más recientes trabajos realizados para el mundo de los datos. Aquí encontrarás modelos de predicción, clusterización, recomendación y visualizaciones</p>
+					  <hr class="my-4">
+					  <p>Actualmente tengo tiempo disponible para nuevos proyectos. Si tienes algo en mente no dudes en contactarme a <a href="#">felipeares.work@gmail.com</a> para que conversemos</p>
+					</div>
 				</div>
-			</div>	
-								
+				<div class="col-md-6 px-0 py-0">
+				</div>
+			</div>
+			
+			
+			<div class="row mt-5 mb-5">
+				<div class="col-md-12">
+					
+					<div class="card-deck">
+						<div class="card mycard">
+							<img class="card-img-top" src="./public/images/quesedice_port.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Que se Dice</h5>
+								<p class="card-text">Un simple robot que se dedica diariamente a leer los principales medios digitales en Chile y mostrarnos las noticias mas relevantes y sus conexiones</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<i class="fa fa-link"></i> 
+									<a href="http://quesedice.cl" target="_blank">quesedice.cl</a>
+								</li>
+								<li class="list-group-item">
+									<i class="fa fa-github"></i> 
+									<a href="https://github.com/felipeares/medios-chile-scraper" target="_blank">/medios-chile-scraper</a>
+								</li>
+							</ul>
+							<div class="card-footer">
+								<small class="text-muted">#npl #scraping #selenium #json #python #numpy #sigmajs #aws.ec2 #aws.s3 #jquery</small>
+							</div>
+						</div>
+						
+						<div class="card mycard">
+							<img class="card-img-top" src="./public/images/votoenbloque_port.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Voto en Bloque</h5>
+								<p class="card-text">¿Cómo votan nuestros Diputados? Una visualización que da cuenta de los distintos bloques que operan en la cámara baja.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<i class="fa fa-link"></i> 
+									<a href="http://votoenbloque.cl" target="_blank">votoenbloque.cl</a>
+								</li>
+								<li class="list-group-item">
+									<i class="fa fa-github"></i> 
+									<a href="https://github.com/felipeares/la-camara" target="_blank">/la-camara</a>
+								</li>
+							</ul>
+							<div class="card-footer">
+								<small class="text-muted">#k.means #ACP #scraping #selenium #json #python #numpy #pandas #d3js #aws.s3 #jquery</small>
+							</div>
+						</div>
+						
+						<div class="card mycard">
+							<img class="card-img-top" src="./public/images/cercanialegislativa_port.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Cercanía Legislativa</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">
+									<i class="fa fa-link"></i> 
+									<a href="http://cercanialegislativa.cl.s3-website-us-west-1.amazonaws.com/" target="_blank">cercanialegislativa.cl</a>
+								</li>
+								<li class="list-group-item">
+									<i class="fa fa-github"></i> 
+									<a href="https://github.com/felipeares/voto-y-lealtad" target="_blank">/voto-y-lealtad</a>
+								</li>
+							</ul>
+							<div class="card-footer">
+								<small class="text-muted">#scraping #selenium #python #json #sigmajs #aws.ec2 #aws.s3 #jquery</small>
+							</div>
+						</div>
+					  
+					</div>
+				</div>
+			</div>
+			
 		</div>
 		
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.min.js"
-			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"></script>
-		<script 
-			src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" 
-			integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" 
-			crossorigin="anonymous"></script>
-		<script 
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" 
-			integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" 
-			crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 			
 		<script src="./public/js/main.js"></script>
 	</body>
