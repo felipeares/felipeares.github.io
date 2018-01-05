@@ -58,7 +58,6 @@ body {
   stroke-opacity: 0.1;
 }
 
-.nodes circle {
-  stroke: #fff;
-  stroke-width: 1.5px;
+.jumbotron p a {
+	color: #555;
 }

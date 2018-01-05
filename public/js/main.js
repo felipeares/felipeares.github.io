@@ -271,7 +271,7 @@ crearNodos(cv);
 
 var graph_container = $('#graph-container');
 var width = graph_container.width(), height = graph_container.height();
-var radius = 20;
+var radius = 25;
 var svg = d3.select("svg")
 			.attr("width", width)
 			.attr("height", height);
@@ -280,8 +280,10 @@ var simulation = d3.forceSimulation()
 					.force("link", d3.forceLink().id(function(d) { return d.id; }))
 					.force("charge", d3.forceManyBody())
 					.force("collide", d3.forceCollide(function(d) { return radius; }))
-					.force("force_bottom", d3.forceY(height).strength(0.15))
+					.force("force_bottom", d3.forceY(height).strength(0.2))
+					.force("force_top", d3.forceY().strength(0.2))
 					.force("force_left", d3.forceX().strength(0.15))
+					.force("force_right", d3.forceX(width).strength(0.15))
 					.force("center", d3.forceCenter(width / 2, height / 2));
 					
 
@@ -317,8 +319,8 @@ simulation
 
 simulation.force("link")
 	.links(links)
-	.distance(function(link) { return 50/(3*link.nivel+1); })
-	.strength(function(link) { return 2; });
+	.distance(function(link) { return 50/(2*link.nivel+1); })
+	.strength(function(link) { return 3; });
 
 
 function ticked() {
