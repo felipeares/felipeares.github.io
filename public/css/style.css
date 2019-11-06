@@ -1,33 +1,41 @@
 body {
   padding-top: 34px;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../images/black-thread-light.png");
 }
 
 .mynavbar {
-	background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  background-image: url("../images/black-thread-light.png");
 }
 
 .mycard {
-	-webkit-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.25);
-	box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.25);
-	margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  min-height: 250px;
+}
+
+.mycard .card-body {
+  min-height: 180px;
 }
 
 .mycard img {
-	border-bottom:2px solid #CCC;
+  border-bottom: 2px solid #ccc;
 }
 
 .mycard .list-group-item i {
-	font-size:22px;
+  font-size: 22px;
 }
 
 .mycard .list-group-item a {
-	color: #333;
-	position: relative;
-	top: -3px;
+  color: #333;
+  position: relative;
+  top: -3px;
+}
+
+#graph-container {
+  display: none;
 }
 
 .node circle {
@@ -59,5 +67,11 @@ body {
 }
 
 .jumbotron p a {
-	color: #555;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  #graph-container {
+    display: block;
+  }
 }
