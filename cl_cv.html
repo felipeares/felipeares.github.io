@@ -23,11 +23,11 @@
       .clear {
         clear: both;
       }
-      #page-wrap {
+      .page-wrap {
         width: 1000px;
         margin: 60px auto 60px;
       }
-      #pic {
+      .pic {
         float: right;
         margin: -30px 0 0 0;
       }
@@ -91,11 +91,11 @@
         margin: 0 0 25px 0px;
         list-style: none;
       }
-      #objective {
+      .objective {
         width: 1000px;
         float: left;
       }
-      #objective p {
+      .objective p {
         font-family: Georgia, Serif;
         font-style: italic;
         color: #666;
@@ -120,15 +120,91 @@
         margin: 0;
         height: 15px;
       }
-      #contact-info p span {
+      .contact-info p span {
         margin-right: 15px;
+      }
+      .cover-letter {
+        line-height: 25px;
+        text-align: justify;
+      }
+      .cover-letter ul {
+        padding-left: 50px;
+        list-style: decimal-leading-zero;
+      }
+      .cover-letter ul li {
+        margin-bottom: 20px;
       }
     </style>
   </head>
 
   <body cz-shortcut-listen="true">
-    <div id="page-wrap">
-      <div id="contact-info" class="vcard">
+    <div class="page-wrap" style="height: 1530px;">
+      <div class="contact-info vcard">
+        <!-- Microformats! -->
+
+        <h1 class="fn">
+          Cover Letter
+          <label>Felipe Ares</label>
+        </h1>
+
+        <p style="font-size: 14px; display: none;">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <span>felipeares.work@gmail.com</span>
+          <i class="fa fa-link" aria-hidden="true"></i>
+          <span>felipeares.github.io</span>
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <span>github.com/felipeares</span>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <span>linkedin.com/in/felipeares/</span>
+        </p>
+      </div>
+
+      <div class="cover-letter">
+        <p>Dear Recipient,</p>
+        <p>
+          I will be moving to Barcelona soon and found the post for Front-End
+          Engineer and thought it would be a good idea to apply. While you will
+          be able to find out more about my developer experience in my CV, I
+          would like to point at the main features I believe I can make a
+          difference in this position:
+        </p>
+        <ul>
+          <li>
+            I am a business-driven developer, meaning I always keep in mind our
+            business model, in order to provide the best experience to our users
+            and the most profitability and growth to our company. I have created
+            two small companies from scratch and that has given me the
+            opportunity to really understand the big picture in a tech company.
+          </li>
+          <li>
+            I have 8+ years’ experience as a full stack developer, building real
+            world solutions on education, data insights and LegalTech. In this
+            journey I forced myself to always improve my technical and
+            theoretical skills and also to keep in line with the latest
+            technologies, frameworks, libraries and design patterns. I am also
+            fluent in english.
+          </li>
+          <li>
+            I love to code, is my profession and my hobby. As an example of
+            this, whenever I have some spare time, I like to build some small
+            projects just for the fun of it. You can see my projects on
+            felipeares.github.io
+          </li>
+          <li>
+            I am moving to Barcelona because I am looking to learn, work and
+            thrive in a bigger tech scene (I have an EU Passport). I am looking
+            forward to work for a company with a large user base, with focus on
+            user experience/design and with the possibility to work with a team
+            of good and motivated developers.
+          </li>
+        </ul>
+        <p>Sincerely,</p>
+        <p>Felipe Ares</p>
+      </div>
+    </div>
+
+    <div class="page-wrap">
+      <div class="contact-info vcard">
         <!-- Microformats! -->
 
         <h1 class="fn">
@@ -149,7 +225,7 @@
         </p>
       </div>
 
-      <div id="objective">
+      <div class="objective">
         <p>
           Business driven developer with 8+ years’ experience building real
           world solutions on education, data insights and legaltech. I am an
