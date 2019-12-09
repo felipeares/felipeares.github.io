@@ -1,22 +1,14 @@
 {
-  "name": "felipeares.github.io",
+  "name": "felipeares",
   "version": "1.0.0",
-  "description": "Personal Page",
-  "main": "index.js",
+  "description": "felipe portfolio",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/felipeares/felipeares.github.io.git"
+    "deploy": "aws s3 sync ./ s3://felipeares/ --exclude '*.DS_Store' --exclude '.gitignore' --exclude '.git/*' --exclude 'README.md' --exclude 'package.json' --profile felipeares"
   },
   "author": "felipeares",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/felipeares/felipeares.github.io/issues"
-  },
-  "homepage": "https://github.com/felipeares/felipeares.github.io#readme",
   "devDependencies": {
     "express": "^4.16.2"
   }
